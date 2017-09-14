@@ -9,7 +9,7 @@
 <body>
 	<!-- I COMMENTI DI SCRIVONO COSI' -->
 	<!-- form action permette di "aprire" un file e method indica il metodo da eseguire -->
-	
+	The request attribute: ${var}${va}
 	<form action="MyServlet" method="Post">
 	<input type="submit" name="button" value="Post"/>
     </form> 

@@ -3,6 +3,7 @@ package myservlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,7 +23,22 @@ public class MyServlet extends HttpServlet {
 	//uso errato dei metodi doGet e doPost(sicuramente)
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
+    	//METODO PER PASSARE DELLE VARIABILI DAL SERVLET AL FILE JSP
+    	Integer i = new Integer(15);
+        request.setAttribute("var", i);
+        
+        Integer k = new Integer(30);
+        request.setAttribute("va", k);
+        
+
+        RequestDispatcher Dispatcher = getServletContext().getRequestDispatcher("/file.jsp");
+        Dispatcher.forward(request, response);
+        
+        //FINE METODO
+        
     	response.sendRedirect("file.jsp");
+    	
+        
     	String var=request.getParameter("button");//button è il nome della variabile assegnata al bottone
     	if(var==null)							  //request.getParameter() permette di salvare il contenuto di una variabile html in una stringa su java
     	{}
