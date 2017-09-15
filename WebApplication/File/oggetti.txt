@@ -1,0 +1,2 @@
+Lavatrice	AAA	C:\Users\Pippo\eclipse-workspace\WebApplication\File\lavatrice\domande.txt	C:\Users\Pippo\eclipse-workspace\WebApplication\File\lavatrice\risposte.txt	C:\Users\Pippo\eclipse-workspace\WebApplication\File\lavatrice\adiacenze.txt
+Oggetto1	AttributoOggeto1	C:\Users\Pippo\eclipse-workspace\WebApplication\File\esempio\DomandeOggetto1.txt	C:\Users\Pippo\eclipse-workspace\WebApplication\File\esempio\ScelteOggetto1.txt	C:\Users\Pippo\eclipse-workspace\WebApplication\File\esempio\AdiacenzeOggetto1.txt
